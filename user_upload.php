@@ -1,8 +1,6 @@
 <?php
-require_once("include/db_connection.php");
-require_once("include/csv.php");
+require_once("Csv.php");
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +8,7 @@ require_once("include/csv.php");
 
 <body>
     <h1>CSV File import</h1>
-    <form method="post" enctype="multipart/form-data" action="csv.php">
+    <form method="post" enctype="multipart/form-data" action="Csv.php">
         <input type="file" name= "file">
         <input type="submit" name="sub" value="Import Data">
     </form>

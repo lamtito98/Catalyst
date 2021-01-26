@@ -14,7 +14,7 @@ $connection = new PDO($database_string);
 if($connection){
     
     $user_table = "CREATE TABLE IF NOT EXISTS users (
-        name character varying not null,
+        names character varying not null,
         surname character varying not null,
         email character varying  not null,
         primary key (email))";

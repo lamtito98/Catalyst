@@ -2,8 +2,8 @@
 $host="localhost";
 $port="5432";
 $dbname="catalyst";
-$username="postgres";
-$password="mardi2020.";
+$username="username";
+$password="password";
 $database_string = "pgsql:host=$host;port=$port;dbname=$dbname;user=$username;password=$password";
 
 try{

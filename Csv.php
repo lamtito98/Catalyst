@@ -41,7 +41,7 @@ if(isset($_POST['sub']))
            }
            // insert the dcsv into the database
            else{
-               $insertCsv = $connection->prepare("INSERT into user(names,surname,email) VALUES (:name, :surname, :email)");
+               $insertCsv = $connection->prepare("INSERT into user(name,surname,email) VALUES (:name, :surname, :email)");
                $insertCsv -> bindParam(":name", $name);
                $insertCsv-> bindParam(":surname", $surname);
                $insertCsv -> bindParam(":email", $email);
